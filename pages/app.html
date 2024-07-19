@@ -1,0 +1,33 @@
+<div id="menu">
+    <button id="create-note">Create Note</button>
+</div>
+
+<div id="notes-container"></div>
+
+
+<div class="notes" id="note-form" >
+    <form id="note-creation-container">
+        <input type="text" id="note-title" placeholder="Title" required>
+        <textarea id="note-content" placeholder="Content" required></textarea>
+        <input type="text" id="note-label" placeholder="Label">
+        <div>
+            <button type="button" id="reminder-button">Set Reminder</button>
+            <button type="button" id="archive-button">Archive</button>
+            
+        </div>
+        <div class="color-picker" id="color-picker">
+            <div class="color-circle" style="background: #f28b82;"></div>
+            <div class="color-circle" style="background: #fbbc04;"></div>
+            <div class="color-circle" style="background: #fff475;"></div>
+            <div class="color-circle" style="background: #ccff90;"></div>
+            <div class="color-circle" style="background: #a7ffeb;"></div>
+            <div class="color-circle" style="background: #cbf0f8;"></div>
+            <div class="color-circle" style="background: #aecbfa;"></div>
+            <div class="color-circle" style="background: #d7aefb;"></div>
+            <div class="color-circle" style="background: #fdcfe8;"></div>
+            <div class="color-circle" style="background: #e6c9a8;"></div>
+        </div>
+        <input type="datetime-local" id="due-date" style="display: none;">
+        <button type="submit" class="save-button">Save</button>
+    </form>
+</div>

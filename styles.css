@@ -1,0 +1,274 @@
+/* Basic styling for the application */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* Basic styling for the application */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(234, 78, 6);
+    color: black;
+    padding: 10px 20px;
+    font-size: 30px;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar .menu-icon {
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+.navbar .search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+    display: none;
+}
+
+.navbar .profile-icon {
+    background: #ffffff;
+    border-radius: 50%;
+    padding-top: 10px;
+    color: #555;
+    font-size: 25px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: #333;
+    color: white;
+    padding-top: 50px;
+    display: none;
+}
+
+.sidebar.active {
+    display: block;
+}
+
+.sidebar .menu-item {
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .menu-item .icon {
+    margin-right: 10px;
+}
+
+/* Login and Signup Page Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 80px;
+}
+
+.login-head {
+    text-align: center;
+}
+
+.signup-head {
+    text-align: center;
+}
+
+.email-pass {
+    padding-bottom: 10px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.login-button {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgb(255, 162, 0);
+    color: #ffffff;
+}
+
+.signup-button {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgb(255, 162, 0);
+    color: #ffffff;
+}
+
+#error-message {
+    color: red;
+    text-align: center;
+}
+
+/* Notes and Menu Styles */
+#menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+#create-note {
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+#menu button, #menu input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#notes-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.note {
+    width: calc(33.333% - 20px);
+    margin: 20px;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.note h2 {
+    margin: 0;
+    font-size: 25px;
+    font-family: "Bree-serif";
+}
+
+.note p {
+    margin: 10px 0;
+    font-size: 14px;
+    font-family: "sans-serif";
+}
+
+.note .tags, .note .due-date {
+    font-size: 14px;
+    color: gray;
+}
+
+.archive-button {
+    background-color: rgb(98, 246, 5);
+    color: white;
+    margin-right: 5px;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.delete-button {
+    background-color: rgb(248, 24, 24);
+    color: white;
+    margin-top: 10px;
+    margin-right: 5px;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.edit-button {
+    background-color: rgb(27, 27, 249);
+    color: white;
+    margin-right: 5px;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+#reminder-button {
+    background-color: rgb(255, 106, 0);
+    color: white;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+#archive-button {
+    background-color: green;
+    color: white;
+    margin-top: 5px;
+}
+
+.save-button {
+    background-color: blue;
+    color: white;
+    margin-top: 5px;
+}
+
+/* Note Creation Form Styles */
+#note-form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#note-form input, #note-form textarea, #note-form button {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#note-creation-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding-left: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#note-creation-container.active {
+    display: block;
+}
+
+.color-picker {
+    display: flex;
+    justify-content: space-between;
+}
+
+.color-picker .color-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
